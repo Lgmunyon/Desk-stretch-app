@@ -1,0 +1,122 @@
+/* Stylings */
+
+body{
+    color: rgb(247, 240, 240);
+    background: #8ad3b8;
+    margin: 100px 250px;
+    height: 100%;
+    width: 100%;
+}
+
+/* .double{
+    border-radius: 10px;
+    border: 10px solid rgba(12, 134, 85, .7);
+    box-shadow: 0 0 10px red;
+    height: 100%;
+    width: 100%;
+} */
+
+.main{
+    text-align: center;
+    position: absolute;
+    width: 57%;
+    height: 65%;
+    background: rgba(12, 134, 85, 1);
+    border-radius: 20px;
+    border: 10px solid rgba(12, 134, 85, .4);
+    box-shadow: 0 0 50px rgba(12, 134, 85, 1);
+    min-height: 65%;
+}
+
+h1{
+    margin: 0;
+    padding: 20px 0 0 0;
+    font-size: 50px;
+}
+
+h3{
+    margin: 0;
+    padding: 10px;
+}
+
+h6{
+    margin: 0;
+    padding: 0 0 20px 0;
+}
+
+header, section{
+    /* background: rgba(12, 134, 85, .7); */
+    margin: 0px;
+}
+
+section + section{
+    padding: 10px;
+}
+
+button{
+    background: #fe483b;
+    border-radius: 0px;
+    border: 2px solid #fe483b; 
+}
+
+.timer{
+    margin: 0 0 30px 0;
+}
+
+
+/* List */
+.dropdown-list, li, a{
+    display: inline-block;
+    margin: 10px 15px 10px 10px;
+    color: black;
+    text-decoration: none;
+    background: #8ad3b8;
+    border-radius: 5px;
+}
+
+.dropdown-list, li{
+    border-radius: 40px;
+}
+
+.dropdown-list a:hover{background: #fe483b;}
+
+.legs{
+    margin: 10px 30px 0 15px;
+}
+
+/*----- Dropdown button -----*/
+/* .dropdown-button{
+    background-color: #fe483b;
+    color: black;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-list{
+    display: none;
+    position: absolute;
+    background-color: #8ad3b8;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rbga(0,0,0,.2);
+    z-index: 1;
+}
+
+.dropdown-list li, a{
+    color: black;
+    padding: 5px 16px 5px 23px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.dropdown-list a:hover {background: red;}
+.dropdown:hover .dropdown-list {display: block;}
+.dropdown:hover .dropdown-button{background: purple;} */
+
+/* Initial landing */
+h3{
+    display: none;
+}
+
+.timer{
+    display: none;
+}
