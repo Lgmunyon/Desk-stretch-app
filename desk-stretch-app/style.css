@@ -15,6 +15,11 @@ h3, button, a {
     font-size: 1rem;
 }
 
+h2 {
+    display: inline;
+    width: 30%;
+}
+
 body{
     color: rgb(247, 240, 240);
     background: #8ad3b8;
