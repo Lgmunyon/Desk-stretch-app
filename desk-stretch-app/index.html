@@ -14,12 +14,12 @@
     <main class="main">
         
             <header>
-                <image class="body-image" src="body.ico" alt ="body"></image>
+                <img onclick = "dropdownFunction()" class="body-image" src="body.ico" alt ="body" >
                 <h1>Fetch a Stretch</h1>
             </header>
             <section>
                 <h6>Welcome to moving better!</h6>
-                <section class="card">
+                <section class="cardDeck">
                     <section class="card-directions">
                         <h3>Stretch: Lorem ipsum dolor sit.</h3>
                         <h3>Explanation: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, autem? Iusto itaque quae perspiciatis illo nostrum aspernatur voluptatum, libero sit provident accusantium explicabo est harum omnis quod? Amet, maiores inventore.</h3>
@@ -28,15 +28,13 @@
                         <h3>Picture:</h3>
                     </section>
                     <section class="button-timer">
-                        <h2 id="sec">00</h2>
-                        <h2 id=":">:</h2>
-                        <h2 id="msec">00</h2>
-                        <button onclick="start()" class = "start-timer">Start Timer</button>
+                        <h2 id="sec">30</h2>
+                        <button onclick="start()" id = 'start' class = "start-timer">Start Timer</button>
                     </section>
                 </section>
-                <span class="dropdown">
-                    <!-- <button class="dropdown-button">Fetch a Stretch</button> -->
-                        <ul class="dropdown-list">
+                
+                <span id = 'dropdownClick' class="dropdown">
+                        <ul id = 'myDropdown' class="dropdown-list">
                             <li class="neck"><a href="#">Neck</a></li>
                             <li class="shoulders"><a href="#">Shoulders</a></li>
                             <li class="hands"><a href="#">Hands</a></li>
@@ -51,5 +49,14 @@
     </main>
 
     <script type="text/javascript" src="main.js"></script>
+    <script> function dropdownFunction() {
+        var x = document.getElementById("dropdownClick");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+      </script>
 </body>
 </html>
