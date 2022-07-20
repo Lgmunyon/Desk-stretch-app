@@ -16,8 +16,7 @@ h3, button, a {
 }
 
 h2 {
-    display: inline;
-    width: 30%;
+    width: 100%;
 }
 
 body{
@@ -142,7 +141,7 @@ a{
 
 
 /* ---THE CARD--- */
-.card{
+.cardDeck{
    /* border:2px solid red; */
    display: flex;
    flex-direction: row;
@@ -238,7 +237,7 @@ h3{
         padding: -10px;
     }
 
-    .card{
+    .cardDeck{
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
