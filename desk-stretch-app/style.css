@@ -102,22 +102,6 @@ button{
     outline: none;
 }
 
-/* ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    background: #8ad3b8;
-    padding: 20px 40px 20px 40px;
-}
-
-li {
-    font-size: 0;
-}
-
-.dropdown-list {
-    width: 100%;
-}*/
-
 .dropdown-list, li{
     border-radius: 40px;
 } 
@@ -142,15 +126,11 @@ a{
 
 /* ---THE CARD--- */
 .cardDeck{
-   /* border:2px solid red; */
    display: flex;
    flex-direction: row;
    justify-content: space-evenly;
-   /* min-height: 200px;
-   min-width: 716px; */
    padding: none;
    box-shadow:0 0 20px rgba(250, 241, 241, 0.6);
-   /* background: rgb(0, 0, 0, .3); */
    margin: 0 0 15px 0;
 }
 
@@ -178,43 +158,6 @@ a{
 h3{
     font-size: 15px;
 }
-
-/*----- Dropdown button -----*/
-/* .dropdown-button{
-    background-color: #fe483b;
-    color: black;
-    padding: 0;
-    margin: 0;
-}
-
-.dropdown-list{
-    display: none;
-    position: absolute;
-    background-color: #8ad3b8;
-    min-width: 160px;
-    box-shadow: 0 8px 16px 0 rbga(0,0,0,.2);
-    z-index: 1;
-}
-
-.dropdown-list li, a{
-    color: black;
-    padding: 5px 16px 5px 23px;
-    text-decoration: none;
-    display: inline-block;
-}
-
-.dropdown-list a:hover {background: red;}
-.dropdown:hover .dropdown-list {display: block;}
-.dropdown:hover .dropdown-button{background: purple;} */
-
-/* Initial landing */
-/* h3{
-    display: none;
-}
-
-.start-timer{
-    display: none;
-} */
 
 /* ---Accessibility--- */
 @media screen and (max-width: 1111px) {
@@ -275,18 +218,65 @@ h3{
         outline: none;
     }
 
-    .dropdown-list, li, a{
+    /* .dropdown-list, li, a{
         display: none;
-    }
+    } */
+
+/* // --- DROPDOWN MENU--- //     */
     .body-image{
         display: flex;
-        max-height: 10%;
-        max-width: 10%;
+        max-height: 30%;
+        max-width: 30%;
         margin: 0;
         padding: 0;
+        z-index: 5;
+        background: rgba(12, 134, 85, 1);
     }
-
-
+    
+    a {
+        cursor: pointer;
+        }
+        
+        .dropdown {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            flex-wrap: wrap;
+           
+        }
+        
+         .dropdown li {
+            letter-spacing: .5px;
+            display: flex;
+            justify-content: center;
+        } 
+        
+        /* Dropdown Content (Hidden by Default) */
+        .dropdown-list {
+            display: none;
+            position: absolute;
+            min-width: 150px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            margin: 0;
+            
+        }
+        
+            /* Links inside the dropdown */
+            .dropdown-list li {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+        
+                /* Change color of dropdown links on hover */
+                .dropdown-list a:hover {
+                    background-color: #ddd
+                }
+    .show {
+        display: block;
+    }
 }
 
 @media screen and (max-width: 911px) {

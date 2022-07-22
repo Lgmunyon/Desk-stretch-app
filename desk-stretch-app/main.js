@@ -102,11 +102,48 @@ mobiscroll.listview('.cardDeck', {
 //     document.getElementById("myDropdown").classList.toggle('show')
 // }
 
-function dropdownFunction() {
-    var x = document.getElementById('dropdownClick')
-    if (x.style.display === 'none') {
-        x.style.display = 'block'
-    }else {
-        x.style.display = 'none'
+// function dropdownFunction() {
+//     var x = document.getElementById('dropdownClick')
+//     if (x.style.display === 'none') {
+//         x.style.display = 'block'
+//     }else {
+//         x.style.display = 'none'
+//     }
+// }
+
+// document.getElementById("menu").addEventListener("click", dropdownFunction()); 
+
+// function dropdownFunction() {
+// //    var x = document.getElementById("dropdownClick").style
+//     const toggle = document.getElementById("myDropdown")
+//     const toggleList = document.getElementsByTagName("li");
+//     console.log(toggle.style.display)
+//     if (toggle.style.display !== null) {
+//         console.log("one")
+//         toggle.style.display = 'inline-block'
+//         toggleList.style.display = 'inline-block'
+
+//     }else {
+// //        x.display = 'none'
+//         console.log("two")
+//     }
+// }
+
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function (event) {
+    if (!event.target.matches('.body-image')) {
+        var dropdowns = document.getElementsByClassName("dropdown-list");
+        showEvent = 'show';
+        for (var i = 0; i < dropdowns.length; i++) {
+            var currentElement = dropdowns[i],
+                currentElementAsString = dropdowns[i].toString();
+            if (currentElementAsString.localeCompare(showEvent)) {
+                currentElement.classList.remove('show');
+            }
+        }
     }
 }
