@@ -16,7 +16,8 @@ h3, button, a {
 }
 
 h2 {
-    width: 100%;
+    width: 50%;
+    font-size: 400%;
 }
 
 body{
@@ -80,7 +81,7 @@ section + section{
 
 button{
     background: #fe483b;
-    border-radius: 0px;
+    /* border-radius: 10px; */
     border: 2px solid #fe483b; 
     
 }
@@ -242,7 +243,6 @@ h3{
             justify-content: center;
             align-content: center;
             flex-wrap: wrap;
-           
         }
         
          .dropdown li {
@@ -256,10 +256,11 @@ h3{
             display: none;
             position: absolute;
             min-width: 150px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            box-shadow: 0px 10px 16px 10px rgba(0,0,0,0.5);
             z-index: 1;
             margin: 0;
-            
+            margin-top: -35%;
+            padding: 0;
         }
         
             /* Links inside the dropdown */
@@ -268,11 +269,13 @@ h3{
                 padding: 12px 16px;
                 text-decoration: none;
                 display: block;
+                text-align: center;
+                margin: 0;
             }
         
                 /* Change color of dropdown links on hover */
                 .dropdown-list a:hover {
-                    background-color: #ddd
+                    background-color: #fe483b
                 }
     .show {
         display: block;
@@ -335,11 +338,27 @@ h3{
         min-height: none;  
         margin-left: 5px;
     }
+    .dropdown-list{
+        margin: -40% 0 20% 0;
+    }
+    h2, .start-timer{
+        display: flex;
+        margin: auto;  
+    }
+    .start-timer {
+        display: flex;
+        
+    }
 
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 430px) {
     .main {
         height: 155%;
+    }
+    .dropdown-list {
+        margin-top: -100%;
+        margin-bottom: 50%;
+        width: 40%;
     }
 }
